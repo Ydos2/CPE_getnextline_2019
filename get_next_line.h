@@ -7,8 +7,9 @@
 
 #ifndef GET_NEXT_LINE_H_
 #define GET_NEXT_LINE_H_
-#define READ_SIZE (1000)
+
 #include <fcntl.h>
+#define READ_SIZE 3
 
 typedef struct val {
     char *buff_inter;
@@ -17,7 +18,7 @@ typedef struct val {
 } val_t;
 
 char *get_next_line(int fd);
-char *read_next_n_bytes(int fd, int n);
+char *read_next_n_bytes(int fd, int n, int count_run, char *buff);
 int read_and_display_read_line_n(char *buff, val_t *val);
 char *append(char *result, char *buff, int i, val_t *val);
 
