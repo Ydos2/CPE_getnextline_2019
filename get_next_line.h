@@ -9,7 +9,10 @@
 #define GET_NEXT_LINE_H_
 
 #include <fcntl.h>
-#define READ_SIZE 1000
+
+#ifndef READ_SIZE
+#define READ_SIZE 3
+#endif /* READ_SIZE */
 
 typedef struct val {
     char *buff_inter;

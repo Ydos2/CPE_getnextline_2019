@@ -48,7 +48,7 @@ char *read_next_n_bytes(int fd, int n, int count_run, char *buff)
             buff_count[j] = buff[i];
         for (int p = 0; buff_inter[p] != '\0'; j++, p++)
             buff_count[j] = buff_inter[p];
-        buff_count[j+1] = '\0';
+        buff_count[j] = '\0';
         return (buff_count);
     }
     if (op <= 0)
