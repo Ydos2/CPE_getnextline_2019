@@ -9,9 +9,10 @@
 #define GET_NEXT_LINE_H_
 
 #include <fcntl.h>
+#include <string.h>
 
 #ifndef READ_SIZE
-#define READ_SIZE 3
+#define READ_SIZE (3)
 #endif /* READ_SIZE */
 
 typedef struct val {
